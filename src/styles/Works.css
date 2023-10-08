@@ -1,0 +1,54 @@
+.works__content {
+  width: 95%;
+  height: 95%;
+  border-radius: 2rem;
+  background-color: hsla(0, 0%, 15%, 0.6);
+  z-index: 100;
+  overflow: hidden;
+
+  padding-block: 1rem;
+}
+
+.projects__container {
+  overflow-y: scroll;
+  height: 450px;
+  padding-inline: 2rem;
+}
+
+.projects__list-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  grid-gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.projects__list-item{
+  list-style: none;  
+}
+
+
+/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+.projects__container::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.projects__container::-webkit-scrollbar:vertical {
+  width:5px;
+}
+
+.projects__container::-webkit-scrollbar-button:increment,.projects__container::-webkit-scrollbar-button {
+  display: none;
+} 
+
+.projects__container::-webkit-scrollbar:horizontal {
+  display: none;
+}
+
+.projects__container::-webkit-scrollbar-thumb {
+  background-color: hsla(0, 0%, 15%, 0.6);
+  border-radius: 2rem;
+}
+
+.projects__container::-webkit-scrollbar-track {
+  border-radius: 10px;  
+}

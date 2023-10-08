@@ -1,0 +1,28 @@
+:root {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* color-scheme: light dark; */
+
+  background-color: #1d1d1b;
+
+  --bg-01: #fcf6eb;
+  --bg-02: #ae94ff;
+  --bg-03: #480ca8;
+  --bg-0: #181818;
+
+  --text-01:#ffffff;
+  --text-02:#fcf6eb;
+  --text-03:#ffcd00;
+  --text-04:#ff8fd7;
+  --text-05:#15b5b1;
+  --text-06:#ed4f00;
+  --text-07:#836fbf;
+  --text-08:#464646;
+  --text-09:#2c2c2c;
+  --text-10:#1b1b1b;
+  --text-11:#000000;
+
+}
