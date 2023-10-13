@@ -1,5 +1,5 @@
 export const images = {
-  pictureOfMe:'/Picture-of-me', 
+  pictureOfMe:'/Picture-of-me.jpg', 
   project_0: '/Project-0.jpg',
   project_1: '/Project-1.jpg',
   project_2: '/Project-2.jpg',
