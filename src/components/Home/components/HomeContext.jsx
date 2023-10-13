@@ -1,4 +1,4 @@
-import Button from '../../Others/Button'
+import Button from '../../Others/Button/Button'
 import { HomeLink } from './HomeLink'
 
 const HomeContext = () => {
