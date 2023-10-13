@@ -1,4 +1,4 @@
-import Button from '../../Others/Button/Button'
+import ButtonHome from '../../Button/ButtonHome'
 import { HomeLink } from './HomeLink'
 
 const HomeContext = () => {
@@ -31,8 +31,9 @@ const HomeContext = () => {
         Thank you for visiting my website and I look forward to hearing from you.
       </p>
 
-        <Button text={'Contact me'} />
-    </div>)
+      <ButtonHome text={'Contact me'} />
+    </div>
+  )
 }
 
 export default HomeContext

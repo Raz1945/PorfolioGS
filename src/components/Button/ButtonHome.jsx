@@ -1,12 +1,11 @@
-import './Button.css'
+import './ButtonHome.css'
 
-const Button = ({ text }) => {
+const ButtonHome = ({ text }) => {
   return (
-
     <div className='class-btn-container'>
       <button className="button-62" role="button">{text}</button>
     </div>
   )
 }
 
-export default Button
+export default ButtonHome
