@@ -27,7 +27,6 @@
 }
 
 
-/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
 .projects__container::-webkit-scrollbar {
   -webkit-appearance: none;
 }

@@ -87,12 +87,16 @@
   background-color: var(--bg-primary);
   margin: -1rem;
   padding: 0.5rem 1rem;
+  overflow-y: scroll;
 }
 
 .project__description {
   display: block;
+  white-space: pre-line;
   z-index: 2;
+  padding-bottom: 1rem;
 }
+
 
 .project__description-link {
   display: block;
