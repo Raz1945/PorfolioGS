@@ -1,8 +1,8 @@
-import './AppWraper.css'
+import './AppWrapper.css'
 
 const AppWraper = ({ children }) => {
   return (
-    <section className='app__wraper'>
+    <section className='app__wrapper'>
         {children}
     </section>
   );

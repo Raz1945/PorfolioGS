@@ -1,0 +1,18 @@
+.about__content {
+  display: flex;
+  width: 95%;
+  height: 95%;
+  border-radius: 2rem;
+  background-color: hsla(0, 0%, 15%, 0.6);
+  overflow: hidden;
+  z-index: 100;
+  gap: 1rem;
+}
+
+.about__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.7rem;
+  padding-left: 2.5rem;
+}

@@ -39,7 +39,7 @@
 /* Título del proyecto */
 .project__title {
   display: block;
-  font-size: 1.3rem;
+  font-size: 1.3em;
   font-weight: 300;
   /** color: var(--bg-primary); */
   color: black;
@@ -72,7 +72,8 @@
 }
 .project__title:hover {
   transition: 0.4s ease;
-  text-shadow: 0.5px 1px 4px var(--neon-02);
+  color: white;
+  text-shadow: 0.5px 1px 3px #ffffff8d;
 }
 
 /* Descripción del proyecto */
@@ -86,24 +87,24 @@
   transition: transform 0.4s ease;
   background-color: var(--bg-primary);
   margin: -1rem;
-  padding: 0.5rem 1rem;
   overflow-y: scroll;
 }
 
 .project__description {
+  padding-top: 0.5rem;
+  margin-inline: 1rem 2rem;
   display: block;
   white-space: pre-line;
   z-index: 2;
   padding-bottom: 1rem;
 }
 
-
 .project__description-link {
   display: block;
   width: max-content;
   color: var(--neon-04);
   font-weight: 400;
-  margin-top: 0.5rem;
+  margin-block: 0.5rem;
   text-decoration: inherit;
   transition: 0.4s ease;
 }

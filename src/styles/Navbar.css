@@ -12,7 +12,6 @@
   margin-top: 1rem;
   border-radius: 9999px;
   background-color: transparent;
-
   width: 41%;
   height: 10vh;
   transition: 0.5s ease;
@@ -86,3 +85,26 @@
   color: var(--text-white);
   text-shadow: var(--text-shadow);
 }
+
+@media(max-width:376px){
+  .nav{
+    display: none;
+  }
+  /* .nav__content {
+    width: 100vw;
+    height: 100vh;
+    align-items: start;
+    justify-content: start;
+    border-radius: 0;
+    margin-top: 0;
+    padding: 1rem 0.5rem;
+    background-color: hsla(0, 0%, 15%, 0.6);
+
+    transition: 0.5s ease;
+
+  }
+  .nav__menu {
+    flex-direction: column;
+  }
+   */
+  }

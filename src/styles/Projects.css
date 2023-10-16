@@ -1,4 +1,4 @@
-.works__content {
+.projects__content {
   width: 95%;
   height: 95%;
   border-radius: 2rem;
@@ -10,34 +10,36 @@
 }
 
 .projects__container {
+  height: 100%;
   overflow-y: scroll;
-  height: 450px;
-  padding-inline: 2rem;
+  scroll-behavior: smooth;
+  padding-inline: 2.5rem;
 }
 
 .projects__list-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 2rem;
   margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-.projects__list-item{
-  list-style: none;  
+.projects__list-item {
+  list-style: none;
 }
-
 
 .projects__container::-webkit-scrollbar {
   -webkit-appearance: none;
 }
 
 .projects__container::-webkit-scrollbar:vertical {
-  width:5px;
+  width: 5px;
 }
 
-.projects__container::-webkit-scrollbar-button:increment,.projects__container::-webkit-scrollbar-button {
+.projects__container::-webkit-scrollbar-button:increment,
+.projects__container::-webkit-scrollbar-button {
   display: none;
-} 
+}
 
 .projects__container::-webkit-scrollbar:horizontal {
   display: none;
@@ -49,5 +51,5 @@
 }
 
 .projects__container::-webkit-scrollbar-track {
-  border-radius: 10px;  
+  border-radius: 10px;
 }

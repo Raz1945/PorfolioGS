@@ -1,7 +1,8 @@
 import { Navigate, createBrowserRouter } from "react-router-dom";
 import Root from "./Root";
-import { Home } from "./Home";
-import { Works } from "./Works";
+import { Home } from "../pages/Home";
+import { About } from "../pages/About";
+import { Projects } from "../pages/Projects";
 
 const AppRoutes = createBrowserRouter([
   {
@@ -14,12 +15,12 @@ const AppRoutes = createBrowserRouter([
         element: <Home />
       },
       {
-        path: 'works',
-        element: <Works />
+        path: 'projects',
+        element: <Projects />
       },
       {
         path: 'about_me',
-        element: <h1>About me</h1>
+        element: <About />
       },
       {
         path: 'resources',

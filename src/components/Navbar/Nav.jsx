@@ -16,7 +16,7 @@ const Navbar = () => {
           navigate("/main");
           break;
         case "2":
-          navigate("/works");
+          navigate("/projects");
           break;
         case "3":
           navigate("/about_me");
@@ -42,7 +42,7 @@ const Navbar = () => {
         <div className="nav__toggle">
           <ul className='nav__menu' id='nav-menu'>
             <NavbarItemNav route='main' num='01' text='home' />
-            <NavbarItemNav route='works' num='02' text='works' />
+            <NavbarItemNav route='project' num='02' text='projects' />
             <NavbarItemNav route='about_me' num='03' text='about me' />
             <NavbarItemNav route='resources' num='04' text='resources' />
           </ul>

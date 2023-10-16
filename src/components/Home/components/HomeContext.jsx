@@ -1,39 +1,31 @@
-import ButtonHome from '../../Button/ButtonHome'
-import { HomeLink } from './HomeLink'
+import homeData from '../../../assets/HomeData';
+import ButtonHome from '../../Button/ButtonHome';
+import { HomeLink } from './HomeLink';
 
 const HomeContext = () => {
   return (
-    <div className='home__text-wraper'>
-
+    <div className='home__text-wrapper'>
       <div className='home__subtitle'>
-        Welcome! My name is
-        <HomeLink text='Gonzalo' />
+        {homeData.subtitle} <HomeLink text={homeData.name} />
       </div>
 
-      <div className='home__title-wraper'>
-        <h1 className='home__title' id="#main" role="main">
-          A Full Stack Web Developer
+      <div className='home__title-wrapper'>
+        <h1 className='home__title' id="main" role="main">
+          {homeData.title}
         </h1>
       </div>
 
-      <p className='home__text'>
-        With a passion for learning and creating things.
-      </p>
+      <div className='home__text-container'>
+        {homeData.paragraphs.map((text, index) => (
+          <p className='home__text' key={index}>
+            {text}
+          </p>
+        ))}
+      </div>
 
-      <p className='home__text'>
-        I specialize in designing and building web applications that are not only functional but also visually appealing.
-      </p>
-
-      <p className='home__text'>
-        I am always looking for new challenges and opportunities to grow and improve my skills.
-      </p>
-      <p className='home__text'>
-        Thank you for visiting my website and I look forward to hearing from you.
-      </p>
-
-      <ButtonHome text={'Contact me'} />
+      <ButtonHome text="Contact me" linkTo="https://www.linkedin.com/in/gs-sanchez" />
     </div>
-  )
-}
+  );
+};
 
-export default HomeContext
+export default HomeContext;

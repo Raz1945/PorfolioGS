@@ -1,11 +1,13 @@
-import './ButtonHome.css'
+import './ButtonHome.css';
 
-const ButtonHome = ({ text }) => {
+const ButtonHome = ({ text, linkTo }) => {
   return (
     <div className='class-btn-container'>
-      <button className="button-62" role="button">{text}</button>
+      <a href={linkTo} className="button-62" role="button">
+        {text}
+      </a>
     </div>
-  )
-}
+  );
+};
 
-export default ButtonHome
+export default ButtonHome;

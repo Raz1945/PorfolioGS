@@ -1,0 +1,16 @@
+.app__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 1rem;
+  width: 100vw;
+  height: 80vh;
+}
+
+@media (max-width: 376px){
+  .app__wrapper{
+    height: 100vh;
+    margin-top: 0;
+  }
+}

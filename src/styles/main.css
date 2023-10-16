@@ -3,7 +3,7 @@
   --ff-Work: 'Work Sans', sans-serif;
 
   font-family: var(--ff-Work);
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 1.2;
   font-weight: 400;
 
@@ -94,6 +94,6 @@
 
 body {
   margin: 0 auto;
-  min-width: 390px; /* Ver medida para el minimo */
+  min-width: 375px; /* Ver medida para el minimo */
   min-height: 100vh;
 }
