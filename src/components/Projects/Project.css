@@ -41,7 +41,6 @@
   display: block;
   font-size: 1.3em;
   font-weight: 300;
-  /** color: var(--bg-primary); */
   color: black;
   text-decoration: inherit;
   position: relative;
@@ -65,12 +64,12 @@
   background-color: var(--neon-04);
   opacity: 0.4;
 }
-.project__title::after {
+.project__title::after{
   transform: scaleX(0);
   transform-origin: 0 50%;
   transition: transform 0.4s ease;
 }
-.project__title:hover {
+.project__title:hover{
   transition: 0.4s ease;
   color: white;
   text-shadow: 0.5px 1px 3px #ffffff8d;
@@ -115,7 +114,6 @@
 /* Animaciones de hover */
 .project__card:hover .project__overlay {
   background-image: var(--gradient-to-up);
-  /* backdrop-filter: blur(0.05em); */
 }
 
 .project__card:hover .project__subcontent {
@@ -126,3 +124,5 @@
   transform: scaleX(1);
   background-color: var(--neon-04);
 }
+
+/*? ver animacion para cuandose haga foco */

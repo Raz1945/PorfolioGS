@@ -12,7 +12,10 @@
 .about__text-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 1.7rem;
   padding-left: 2.5rem;
+}
+
+.about__heading{
+
 }
