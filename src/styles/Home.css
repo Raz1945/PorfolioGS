@@ -35,7 +35,7 @@
 
 .home__link {
   display: inline-block;
-  color: var(--text-white);
+  color: var(--text-00);  
   font-weight: 300;
   text-decoration: inherit;
 }
@@ -100,13 +100,11 @@
 }
 .home__text {
   display: block;
-  font-size: 0.875rem;
+  font-size: 0.875em;
   font-family: var(--ff-Work);
   font-weight: 400;
   line-height: 1.5;
-  opacity: 0.8;
-  color: var(--text-white);
-  /* text-shadow: var(--text-shadow); */
+  color: var(--text-00);  
 }
 
 .home__picture {

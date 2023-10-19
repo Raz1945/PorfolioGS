@@ -6,9 +6,7 @@ export const Projects = () => {
   return (
     <>
       <AppWrapper>
-        <div className='projects__content'>
           <ProjectsContainer />
-        </div>
       </AppWrapper>
     </>
   )

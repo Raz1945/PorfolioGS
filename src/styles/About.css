@@ -1,21 +1,168 @@
-.about__content {
+.about__container {
   display: flex;
   width: 95%;
   height: 95%;
   border-radius: 2rem;
   background-color: hsla(0, 0%, 15%, 0.6);
-  overflow: hidden;
   z-index: 100;
-  gap: 1rem;
+  overflow: hidden;
+  padding-block: 1rem;
 }
 
-.about__text-wrapper {
+.about__wrapper {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  grid-auto-rows: minmax(100px, auto);
+
+  grid-template-areas:
+    '. heading'
+    'contact presentation'
+    'technologies presentation'
+    'technologies education';
+  gap: 1.5rem;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  padding-inline: 2.5rem;
+}
+/* Scroll */
+.about__wrapper::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+.about__wrapper::-webkit-scrollbar:vertical {
+  width: 5px;
+}
+.about__wrapper::-webkit-scrollbar-button:increment,
+.about__wrapper::-webkit-scrollbar-button {
+  display: none;
+}
+.about__wrapper::-webkit-scrollbar:horizontal {
+  display: none;
+}
+.about__wrapper::-webkit-scrollbar-thumb {
+  background-color: hsla(0, 0%, 15%, 0.6);
+  border-radius: 2rem;
+}
+.about__wrapper::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Subheading */
+.about__subheading {
+  font-size: 1.25em;
+  font-weight: 400;
+  color: var(--text-03);
+  text-shadow: var(--text-shadow);
+}
+
+/* Line */
+.about-line {
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--neon-04);
+  margin-block: 0.25rem;
+}
+
+/*  Contact */
+.about__contact {
+  grid-area: contact;
+  height: max-content;
+}
+
+.about__contact-list {
+  list-style: none;
+}
+
+.about__contact-item {
   display: flex;
-  flex-direction: column;
-  gap: 1.7rem;
-  padding-left: 2.5rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
 }
 
-.about__heading{
+.about__contact-icon {
+  display: flex;
+  align-items: center;
+  color: var(--text-00);
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+.about__contact-icon.map:hover {
+  color: mediumslateblue;
+}
+.about__contact-icon.linkedin:hover {
+  color: #0e76a8; 
+}
+.about__contact-icon.github:hover {
+  color: #171515;
+}
+.about__contact-icon.download:hover {
+  color: var(--neon-03);
+}
 
+.about__contact-text {
+  font-size: 0.875em;
+  font-weight: 400;
+  margin-left: 0.3rem;
+  color: var(--text-00);
+}
+
+/*  Heading */
+.about__heading-container {
+  grid-area: heading;
+}
+.about__heading-name {
+  font-size: 4em;
+  font-family: var(--ff-Abril);
+  text-shadow: var(--text-shadow);
+
+  /* background: linear-gradient(65deg, #23d5ab, #705cf2, #23d5ab);
+  background-size: 110%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+.about__heading-dev {
+  font-size: 1.25em;
+  font-weight: 300;
+  text-shadow: var(--text-shadow);
+}
+
+/* Presentation */
+.about__presentation-container {
+  grid-area: presentation;
+}
+
+.about__presentation {
+  font-size: 0.875em;
+  font-weight: 300;
+  line-height: 1.6;
+
+  color: var(--text-00);
+  text-shadow: var(--text-shadow);
+}
+
+/* Technologies */
+.about__technologies-container {
+  grid-area: technologies;
+  height: max-content;
+}
+.about__technologies-list {
+  list-style: none;
+  margin-top: 1rem;
+}
+.about__technologies {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.875em;
+  margin-bottom: 0.25rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: var(--text-00);
+}
+
+/* Education */
+.about__education-container {
+  grid-area: education;
+  background-color: darkgoldenrod;
 }
