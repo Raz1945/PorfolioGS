@@ -29,7 +29,7 @@
   -webkit-appearance: none;
 }
 .about__wrapper::-webkit-scrollbar:vertical {
-  width: 5px;
+  width: 7px;
 }
 .about__wrapper::-webkit-scrollbar-button:increment,
 .about__wrapper::-webkit-scrollbar-button {

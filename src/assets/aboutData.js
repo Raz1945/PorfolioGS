@@ -1,5 +1,5 @@
 const aboutData = {
-  heading: "Gonzalo Sanchez",
+  heading: "Gonzalo Sánchez",
   subheading: "A passionate Full Stack developer.",
   presentation: [
     "My primary focus is web development, using HTML, CSS, and JavaScript (with an emphasis on React) in the frontend, and Python and Node.JS in the backend. I'm skilled in managing databases like MongoDB, MySQL, and PostgreSQL and have knowledge of TypeScript and Redux for building React applications.",
