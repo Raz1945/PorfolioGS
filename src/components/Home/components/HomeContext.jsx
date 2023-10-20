@@ -1,4 +1,4 @@
-import homeData from '../../../assets/HomeData';
+import homeData from '../../../assets/homeData';
 import ButtonHome from '../../Button/ButtonHome';
 import { HomeLink } from './HomeLink';
 
