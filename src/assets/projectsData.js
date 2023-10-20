@@ -32,11 +32,12 @@ const projectsData = [
     imgSrc: images.project_3,
     alt: 'WebSenpai Project',
     title: 'WebSenpai',
-    description: 'WebSenpai is a project that serves as a playground for honing my skills in DOM manipulation, form validation, and testing my HTML and CSS expertise. It provides an ideal environment to refine my proficiency in Flexbox and/or Grid layouts.',
+    description:
+      'WebSenpai is a project that serves as a playground for honing my skills in DOM manipulation, form validation, and testing my HTML and CSS expertise. It provides an ideal environment to refine my proficiency in Flexbox and/or Grid layouts.',
     linkTo: 'https://fylo-page-vercel-app.vercel.app/',
     linkToCode: 'https://github.com/Raz1945/FyloPage.vercel.app',
   },
-  
+
   {
     imgSrc: images.project_4,
     alt: 'TodoApp Project',
@@ -60,7 +61,8 @@ const projectsData = [
     imgSrc: images.project_6,
     alt: 'Audn Project',
     title: 'Audn',
-    description: '',
+    description:
+      'This project, still in the development stage, represents a combination of technologies that includes a backend built with Node.js and a database managed through PostgreSQL. \n\nThis database connects remotely to an online service called Neon, a Serverless PostgreSQL. Additionally, the frontend of the application has been designed using React.\n\n In essence, it is a music application with functionalities similar to those found on platforms like Spotify."',
     linkTo: 'https://fylo-page-vercel-app.vercel.app/',
     linkToCode: 'https://github.com/Raz1945/FyloPage.vercel.app',
   },

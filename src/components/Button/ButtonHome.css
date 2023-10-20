@@ -10,17 +10,17 @@
   background: linear-gradient(65deg, #EF4765, #FF9A5A);
   border: 0;
   border-radius: 12px;
-  color: #FFFFFF;
+  color: var(--text-00);
   cursor: pointer;
   display: inline-block;
-  font-size: 1rem;
+  font-size: 0.875em;
   font-weight: 500;
   line-height: 2.5;
   outline: transparent;
   padding: 0 1rem;
   text-align: center;
   text-decoration: none;
-  transition: box-shadow .2s ease-in-out;
+  transition: box-shadow 1s ease;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -32,5 +32,6 @@
 }
 
 .button-62:not([disabled]):hover {
+  transition: 1s ease;
   box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
 }

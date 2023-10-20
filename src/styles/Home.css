@@ -22,11 +22,11 @@
   display: flex;
   gap: 5px;
   line-height: 1;
+  color: var(--text-00);
   font-size: 1em;
   font-family: var(--ff-Work);
   font-weight: 300;
   text-shadow: var(--text-shadow);
-  opacity: 0.8;
 }
 
 .home__subtitle-name {
@@ -69,7 +69,7 @@
 
 .home__title {
   display: block;
-  font-size: 5em;
+  font-size: 4.5em;
   font-family: var(--ff-Abril);
   padding-bottom: 2rem;
   line-height: 1;
@@ -102,7 +102,7 @@
   display: block;
   font-size: 0.875em;
   font-family: var(--ff-Work);
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
   color: var(--text-00);  
 }

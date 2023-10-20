@@ -21,11 +21,13 @@ const Navbar = () => {
         case "3":
           navigate("/about_me");
           break;
-        case "4":
-          navigate('/resources');
-          break;
-        default:
-          break;
+
+// todo 
+        // case "4":
+        //   navigate('/resources');
+        //   break;
+        // default:
+        //   break;
       }
     };
 
@@ -44,7 +46,8 @@ const Navbar = () => {
             <NavbarItemNav route='main' num='01' text='home' />
             <NavbarItemNav route='projects' num='02' text='projects' />
             <NavbarItemNav route='about_me' num='03' text='about me' />
-            <NavbarItemNav route='resources' num='04' text='resources' />
+            
+            {/*// todo <NavbarItemNav route='resources' num='04' text='resources' /> */}
           </ul>
         </div>
       </div>

@@ -11,7 +11,7 @@
 
 .about__wrapper {
   display: grid;
-  grid-template-columns: 2fr 10fr;
+  grid-template-columns: 2.5fr 9.5fr;
   grid-auto-rows: minmax(100px, auto);
 
   grid-template-areas:
@@ -48,7 +48,7 @@
 
 /* Subheading */
 .about__subheading {
-  font-size: 1.25em;
+  font-size: 1.2em;
   font-weight: 400;
   color: var(--text-03);
   text-shadow: var(--text-shadow);
@@ -59,7 +59,7 @@
   border-style: solid;
   border-width: 1px;
   border-color: var(--neon-04);
-  margin-block: 0.25rem;
+  margin-block: .25rem;
 }
 
 /*  Contact */
@@ -67,17 +67,14 @@
   grid-area: contact;
   height: max-content;
 }
-
 .about__contact-list {
   list-style: none;
 }
-
 .about__contact-item {
   display: flex;
   align-items: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.7em;
 }
-
 .about__contact-icon {
   display: flex;
   align-items: center;
@@ -95,9 +92,8 @@
   color: #171515;
 }
 .about__contact-icon.download:hover {
-  color: var(--neon-03);
+  color: #daa520;
 }
-
 .about__contact-text {
   font-size: 0.875em;
   font-weight: 400;
@@ -105,24 +101,25 @@
   color: var(--text-00);
 }
 
+
 /*  Heading */
 .about__heading-container {
   grid-area: heading;
 }
 .about__heading-name {
-  font-size: 4em;
+  font-size: 3.5em;
   font-family: var(--ff-Abril);
-  text-shadow: var(--text-shadow);
+  /* text-shadow: var(--text-shadow); */
 
-  /* background: linear-gradient(65deg, #23d5ab, #705cf2, #23d5ab);
+  background: linear-gradient(65deg, #23d5ab, #705cf2, #23d5ab);
   background-size: 110%;
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent; */
+  -webkit-text-fill-color: transparent;
 }
 
 .about__heading-dev {
-  font-size: 1.25em;
+  font-size: 1.2em;
   font-weight: 300;
   text-shadow: var(--text-shadow);
 }
@@ -131,24 +128,28 @@
 .about__presentation-container {
   grid-area: presentation;
 }
-
 .about__presentation {
   font-size: 0.875em;
   font-weight: 300;
   line-height: 1.6;
-
   color: var(--text-00);
   text-shadow: var(--text-shadow);
 }
+
 
 /* Technologies */
 .about__technologies-container {
   grid-area: technologies;
   height: max-content;
 }
+.about__technologies-title{
+  margin-top: 2rem;
+  margin-bottom: .5rem;
+  color: var(--text-03);
+
+}
 .about__technologies-list {
   list-style: none;
-  margin-top: 1rem;
 }
 .about__technologies {
   display: flex;

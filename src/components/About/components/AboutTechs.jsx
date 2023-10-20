@@ -4,7 +4,7 @@ import aboutData from '../../../assets/aboutData'
 export const AboutTechs = () => {
   return (
     <div className="about__technologies-container">
-      <hr className="about-line" />
+      <p className='about__technologies-title'>Core Technologies:</p>
       <ul className="about__technologies-list">
         {aboutData.technologies.map((tech, index) => (
           <li className="about__technologies" key={index}>

@@ -1,5 +1,7 @@
 import aboutData from "../assets/aboutData"
 import { AboutContacts } from "../components/About/components/AboutContacts"
+import { AboutHeading } from "../components/About/components/AboutHeading"
+import { AboutPresentation } from "../components/About/components/AboutPresentation"
 import { AboutTechs } from "../components/About/components/AboutTechs"
 import { AboutWrapper } from "../components/About/components/AboutWrapper"
 import AppWraper from "../components/Others/AppWrapper"
@@ -10,18 +12,8 @@ export const About = () => {
     <AppWraper>
       <AboutWrapper>
         <AboutContacts />
-
-        <div className="about__heading-container">
-          <h1 className="about__heading-name">{aboutData.heading}</h1>
-          <hr className="about-line" />
-          <p className="about__heading-dev">{aboutData.subheading}</p>
-        </div>
-
-        <div className="about__presentation-container">
-          <p className="about__subheading">Presentation</p>
-          <p className="about__presentation">{aboutData.presentation}</p>
-        </div>
-
+        <AboutHeading />
+        <AboutPresentation />
         <AboutTechs />
 
         <div className="about__education-container">
@@ -36,7 +28,6 @@ export const About = () => {
           </ul>
         </div>
 
-        {/* <p className="about__subheading">Experience</p> */}
       </AboutWrapper>
     </AppWraper>
   )
