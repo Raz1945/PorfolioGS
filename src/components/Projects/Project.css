@@ -1,13 +1,3 @@
-.projects__content {
-  width: 95%;
-  height: 95%;
-  border-radius: 2rem;
-  background-color: hsla(0, 0%, 15%, 0.6);
-  z-index: 100;
-  overflow: hidden;
-  padding-block: 1rem;
-}
-
 /* Estilos generales para .project__card */
 .project__card {
   --padding: 1rem;
@@ -43,7 +33,7 @@
 
 /* Contenido del proyecto */
 .project__content {
-  height: 7vh;
+  height: 7vh;  
 }
 
 /* Título del proyecto */
@@ -88,16 +78,41 @@
 /* Descripción del proyecto */
 .project__subcontent {
   height: 40%;
+  position: relative;
+  width: calc(100.5% + var(--padding));
+  left: calc(var(--padding) * -1);
+  
   font-weight: 300;
   color: var(--text-00);
-  position: relative;
-  transform: translateY(100%);
+  /* transform: translateY(100%); */
   transition: transform 0.4s ease;
   background-color: var(--bg-primary);
-  margin: -1rem;
-  overflow-y: scroll;
+  overflow-y: scroll; 
+}
+/* Scroll */
+.project__subcontent::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+.project__subcontent::-webkit-scrollbar:vertical {
+  width: 5px;
+}
+.project__subcontent::-webkit-scrollbar-button:increment,
+.project__subcontent::-webkit-scrollbar-button {
+  display: none;
+}
+.project__subcontent::-webkit-scrollbar:horizontal {
+  display: none;
+}
+.project__subcontent::-webkit-scrollbar-thumb {
+  background-color:hsl(32, 96%, 57%,0.6);
+  border-radius: 2rem;
+}
+.project__subcontent::-webkit-scrollbar-track {
+  border-radius: 10px;
 }
 
+
+/*  */
 .project__description {
   font-size: 0.75em;
   padding-top: 0.5rem;

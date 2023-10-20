@@ -1,12 +1,14 @@
-import Project from "../Project"
-import projectsData from "../../../assets/projectsData";
+import Project from "./Project"
+import projectsData from "../../assets/projectsData";
 
 const ProjectsContainer = () => {
   return (
     <div className='projects__content'>
       <article className="projects__container">
+        
         <ul className="projects__list-container">
           {projectsData.map((project, index) => (
+
             <Project
               key={index}
               imgSrc={project.imgSrc}
@@ -16,6 +18,7 @@ const ProjectsContainer = () => {
               linkTo={project.linkTo}
               linkToCode={project.linkToCode}
             />
+            
           ))}
         </ul>
       </article>

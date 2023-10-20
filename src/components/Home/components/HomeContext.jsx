@@ -3,20 +3,22 @@ import ButtonHome from '../../Button/ButtonHome';
 import { HomeLink } from './HomeLink';
 
 const HomeContext = () => {
+  const { subtitle, name, title, paragraphs } = homeData; 
+
   return (
     <div className='home__text-wrapper'>
       <div className='home__subtitle'>
-        {homeData.subtitle} <HomeLink text={homeData.name} />
+        {subtitle} <HomeLink text={name} />
       </div>
 
       <div className='home__title-wrapper'>
         <h1 className='home__title' id="main" role="main">
-          {homeData.title}
+          {title}
         </h1>
       </div>
 
       <div className='home__text-container'>
-        {homeData.paragraphs.map((text, index) => (
+        {paragraphs.map((text, index) => (
           <p className='home__text' key={index}>
             {text}
           </p>
