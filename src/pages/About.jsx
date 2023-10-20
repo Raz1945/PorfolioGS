@@ -3,10 +3,10 @@ import { AboutHeading } from "../components/About/components/AboutHeading"
 import { AboutPresentation } from "../components/About/components/AboutPresentation"
 import { AboutTechs } from "../components/About/components/AboutTechs"
 import { AboutWrapper } from "../components/About/components/AboutWrapper"
+import { Education } from "../components/Education/Education"
 import AppWraper from "../components/Others/AppWrapper"
 import "../styles/About.css"
 
-import aboutData from "../assets/aboutData"
 
 export const About = () => {
   return (
@@ -17,16 +17,7 @@ export const About = () => {
         <AboutPresentation />
         <AboutTechs />
 
-        <div className="about__education-container">
-          <p className="about__subheading">Education</p>
-          <ul className="about__education-list">
-            {/* {aboutData.education.map((education, index) => (
-              <ItemBox key={index} education={education}/>
-            ))} */}
-            <p className="about__presentation">{aboutData.presentation}</p>
-          </ul>
-        </div>
-
+        {/* <Education /> */}
       </AboutWrapper>
     </AppWraper>
   )
