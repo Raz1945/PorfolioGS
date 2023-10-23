@@ -1,12 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
-
 import { NavbarItemNav } from "./components/NavbarItemNav";
-
 import '../../styles/Navbar.css'
 
 const Navbar = () => {
-  //...funciones
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -21,8 +18,7 @@ const Navbar = () => {
         case "3":
           navigate("/about_me");
           break;
-
-// todo 
+        // todo 
         // case "4":
         //   navigate('/resources');
         //   break;
@@ -32,7 +28,6 @@ const Navbar = () => {
     };
 
     window.addEventListener("keydown", handleKeyDown);
-
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
