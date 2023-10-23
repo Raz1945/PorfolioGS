@@ -1,15 +1,15 @@
-import Project from "./Project"
 import projectsData from "../../assets/projectsData";
+import { ProjectCard } from "./components/ProjectCard";
 
-const ProjectsContainer = () => {
+export const ProjectsContainer = () => {
   return (
     <div className='projects__content'>
       <article className="projects__container">
-        
+
         <ul className="projects__list-container">
           {projectsData.map((project, index) => (
 
-            <Project
+            <ProjectCard
               key={index}
               imgSrc={project.imgSrc}
               alt={project.alt}
@@ -18,12 +18,10 @@ const ProjectsContainer = () => {
               linkTo={project.linkTo}
               linkToCode={project.linkToCode}
             />
-            
+
           ))}
         </ul>
       </article>
     </div>
   );
 };
-
-export default ProjectsContainer

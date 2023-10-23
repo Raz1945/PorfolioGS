@@ -12,12 +12,12 @@
 .about__wrapper {
   display: grid;
   grid-template-columns: 2.5fr 9.5fr;
-  grid-auto-rows: minmax(100px, auto);
+  grid-auto-rows: minmax(max-content, auto);
 
   grid-template-areas:
     '. heading'
     'contact presentation'
-    'technologies presentation'
+    'technologies education'
     'technologies education';
   gap: 1.5rem;
   overflow-y: scroll;
@@ -46,9 +46,9 @@
   border-radius: 10px;
 }
 
-/* Subheading */
+/** Subheading */
 .about__subheading {
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: 400;
   color: var(--text-03);
   text-shadow: var(--text-shadow);
@@ -59,7 +59,7 @@
   border-style: solid;
   border-width: 1px;
   border-color: var(--neon-04);
-  margin-block: .25rem;
+  margin-block: 0.25rem;
 }
 
 /*  Contact */
@@ -80,13 +80,13 @@
   align-items: center;
   color: var(--text-00);
   text-decoration: none;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
 }
 .about__contact-icon.map:hover {
   color: mediumslateblue;
 }
 .about__contact-icon.linkedin:hover {
-  color: #0e76a8; 
+  color: #0e76a8;
 }
 .about__contact-icon.github:hover {
   color: #171515;
@@ -101,10 +101,10 @@
   color: var(--text-00);
 }
 
-
 /*  Heading */
 .about__heading-container {
   grid-area: heading;
+  height: max-content;
 }
 .about__heading-name {
   font-size: 3.5em;
@@ -127,6 +127,7 @@
 /* Presentation */
 .about__presentation-container {
   grid-area: presentation;
+  height: 100%;
 }
 .about__presentation {
   font-size: 0.875em;
@@ -136,17 +137,14 @@
   text-shadow: var(--text-shadow);
 }
 
-
 /* Technologies */
 .about__technologies-container {
   grid-area: technologies;
   height: max-content;
 }
-.about__technologies-title{
-  margin-top: 2rem;
-  margin-bottom: .5rem;
+.about__technologies-title {
+  margin-bottom: 0.5rem;
   color: var(--text-03);
-
 }
 .about__technologies-list {
   list-style: none;
@@ -165,5 +163,69 @@
 /* Education */
 .about__education-container {
   grid-area: education;
-  background-color: darkgoldenrod;
+  height: max-content;
+}
+
+.education__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+/* Title */
+.education__title {
+  display: flex;
+  gap: 0.2rem;
+  color: var(--neon-04);
+  font-size: 1em;  
+  text-shadow: var(--text-shadow);
+}
+
+.education__academy {
+  font-weight: 400;
+}
+.education__course {
+  font-weight: 600;
+}
+
+/* Subtitle */
+.education__subtitle {
+  font-size: 0.875em;
+  font-weight: 300;
+}
+
+/* Knowledge */
+.education__knowledge {
+  font-size: 0.875em;
+  text-shadow: var(--text-shadow);
+
+}
+.education__knowledge-title {
+  font-weight: 500;
+}
+.education__technology-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.2em;
+  width: 100%;
+  list-style: none;
+}
+.education__technology{
+  font-weight: 300;
+}
+
+/* Other Knowledge */
+.education__other-title{
+  margin-top: 0.2em;
+  font-weight: 500;
+  text-shadow: var(--text-shadow);
+}
+.education__other-list{
+  font-weight: 300;
+}
+
+/* line divider */
+.education__divider{
+  margin-bottom: .5rem;
 }

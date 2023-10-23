@@ -1,6 +1,6 @@
 import { BiCodeBlock } from "react-icons/bi";
 
-export const ProjectsSubContent = ({ description, linkToCode, title }) => {
+export const ProjectSubContent = ({ description, linkToCode, title }) => {
   return (
     <div className='project__subcontent'>
         <p className="project__description">

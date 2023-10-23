@@ -3,7 +3,7 @@ import { AboutHeading } from "../components/About/components/AboutHeading"
 import { AboutPresentation } from "../components/About/components/AboutPresentation"
 import { AboutTechs } from "../components/About/components/AboutTechs"
 import { AboutWrapper } from "../components/About/components/AboutWrapper"
-import { Education } from "../components/Education/Education"
+import { AboutEducation } from "../components/About/components/AboutEducation"
 import AppWraper from "../components/Others/AppWrapper"
 import "../styles/About.css"
 
@@ -16,8 +16,7 @@ export const About = () => {
         <AboutHeading />
         <AboutPresentation />
         <AboutTechs />
-
-        {/* <Education /> */}
+        <AboutEducation />
       </AboutWrapper>
     </AppWraper>
   )
