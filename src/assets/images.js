@@ -7,4 +7,5 @@ export const images = {
   project_4: '/Project-4.jpg',
   project_5: '/Project-5.jpg',
   project_6: '/Project-6.jpg',
+  project_7: '/Project-7.jpeg',
 }

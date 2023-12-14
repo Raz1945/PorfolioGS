@@ -65,7 +65,17 @@ const projectsData = [
     description:
       'This project, still in the development stage, represents a combination of technologies that includes a backend built with Node.js and a database managed through PostgreSQL. This database connects remotely to an online service called Neon, a Serverless PostgreSQL. Additionally, the frontend of the application has been designed using React.\n\nIn essence, it is a music application with functionalities similar to those found on platforms like Spotify.',
     linkTo: '#',
-    linkToCode: '#',
+    linkToCode: 'https://github.com/Raz1945/Auden-Backend',
+  },  
+  {
+    // Aún en desarrollo.
+    imgSrc: images.project_7,
+    alt: 'Next Universe',
+    title: 'Next Universe',
+    description:
+      'This project, still in the development stage, represents a combination of technologies that includes a backend built with Node.js and a database managed through MongoDB. Additionally, it features a frontend developed in React.\n\n The project revolves around creating an experience similar to a game called OGame..',
+    linkTo: '#',
+    linkToCode: 'https://github.com/Raz1945/nextUniverse',
   },  
   // Agregar el resto de los proyectos aquí
 ];
